@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_view_group"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal">
+
+    <!-- gravity 가 textview layout_width="wrap_content" 일때 적용됨, 왜 그러지?  -->
+
+    <TextView
+        android:id="@+id/text_body"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Body"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/img_blue"
+        android:layout_width="84dp"
+        android:layout_height="84dp"
+        android:layout_margin="2dp"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/circle"
+        android:tint="@android:color/holo_blue_light" />
+
+
+    <ImageView
+        android:id="@+id/img_purple"
+        android:layout_width="84dp"
+        android:layout_height="84dp"
+        android:layout_margin="2dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@id/img_blue"
+        android:src="@drawable/circle"
+        android:tint="@android:color/holo_purple" />
+
+    <ImageView
+        android:id="@+id/img_green"
+        android:layout_width="84dp"
+        android:layout_height="84dp"
+        android:layout_margin="2dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@id/img_purple"
+        android:src="@drawable/circle"
+        android:tint="@android:color/holo_green_light" />
+
+    <ImageView
+        android:id="@+id/img_orange"
+        android:layout_width="84dp"
+        android:layout_height="84dp"
+        android:layout_margin="2dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@id/img_green"
+        android:src="@drawable/circle"
+        android:tint="@android:color/holo_orange_light" />
+
+
+</RelativeLayout>

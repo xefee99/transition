@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_view_group"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/btns"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btn_change_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="change size" />
+
+            <Button
+                android:id="@+id/btn_change_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="change location" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/btns">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.android.volley.toolbox.NetworkImageView
+                android:id="@+id/profile_image"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/ic_anonymous" />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Lorem Ipsum"
+                android:textSize="32sp" />
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada sem eget quam lacinia, ac molestie nisi laoreet. Pellentesque in dui ipsum. Vestibulum quis porttitor nisl. Vivamus risus neque, dapibus a justo in, mollis iaculis augue. Fusce a dolor molestie, tempus neque vel, vestibulum mi. Proin pulvinar ac leo ac dictum. Cras volutpat eros ut tellus ornare ultricies. Pellentesque eget purus eget quam porttitor sollicitudin a a enim. Duis diam justo, condimentum ac quam eget, viverra vestibulum turpis. Duis vel tellus volutpat arcu sollicitudin cursus et vel sem. Praesent euismod eleifend ipsum id elementum. Nam in massa nisi. Phasellus eu malesuada ante. Ut nec fermentum magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lobortis vel augue id sodales. Aliquam tincidunt interdum facilisis. Integer facilisis, mauris in porta volutpat, felis libero venenatis massa, quis tristique risus eros vestibulum mauris. Proin mi neque, pellentesque vulputate risus et, fringilla vestibulum enim. Nulla dapibus vestibulum erat, sit amet dictum purus faucibus ac. Cras luctus vehicula velit sed molestie. Curabitur non mi auctor, cursus nibh ut, consectetur felis. Duis eget luctus sem. Quisque pulvinar volutpat odio, et volutpat arcu gravida quis. Pellentesque aliquet, nisi et convallis sollicitudin, nunc felis malesuada quam, sed consectetur quam leo eget est. Nulla maximus tempor odio eget efficitur. Mauris at tellus euismod, mollis orci ut, tempor eros. Pellentesque porta libero eu metus viverra luctus. Vestibulum vestibulum commodo felis nec imperdiet. Phasellus tellus urna, vestibulum non ex ut, vulputate fringilla lorem. Phasellus volutpat aliquam mauris, quis ornare felis commodo vitae. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vel sapien imperdiet, consectetur augue tincidunt, maximus magna. Nam pulvinar id erat vel facilisis. Nullam mollis sit amet eros vel commodo. Phasellus bibendum ullamcorper odio eget scelerisque. Cras maximus, orci et pharetra egestas, tortor justo porta neque, et posuere enim tellus id libero. Nunc malesuada, purus et facilisis mollis, tortor odio dictum urna, quis aliquam tortor neque ut nulla. Praesent et hendrerit velit, at lacinia arcu. Aliquam nec maximus dui, non viverra felis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Duis quis lorem id purus semper auctor aliquet at mauris. Praesent nec arcu quis ipsum vehicula sodales nec a nunc. Praesent consequat ligula vitae ex rhoncus, et sagittis sapien vehicula. Maecenas at neque vitae ligula cursus maximus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse aliquam sem felis, in tincidunt mi accumsan nec. Donec blandit felis a mauris dictum, a tincidunt risus lobortis. Sed vitae felis est. Quisque a congue risus. Morbi lobortis arcu diam, a rhoncus sem lacinia nec. Quisque sed sapien consequat, condimentum odio sit amet, pretium nisi. Duis lacus massa, eleifend nec purus et, lobortis ornare nisl. Curabitur aliquam velit quis egestas condimentum. In eget dui facilisis, rutrum risus et, auctor magna. Praesent non eros at tortor lobortis tincidunt. Donec ac tempus magna. Vestibulum vitae sodales velit, ac ornare mauris. Vestibulum convallis eu dolor quis tristique. Donec in elit iaculis, dictum lorem lacinia, ultrices velit. Vestibulum quis orci cursus, vehicula leo non, eleifend turpis. Quisque faucibus in libero at egestas. Duis et laoreet eros. Pellentesque et augue odio. Pellentesque venenatis euismod aliquet. Phasellus at fermentum lorem. Cras ut accumsan neque, non eleifend metus. Pellentesque suscipit risus elit, ac suscipit quam bibendum ut."
+                android:textSize="20sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

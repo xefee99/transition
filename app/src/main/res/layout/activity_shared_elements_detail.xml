@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="niad.kr.example50.activity.SharedElementsDetailActivity">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:elevation="4dp">
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|start"
+            android:textSize="24sp"
+            android:textColor="@android:color/primary_text_dark"
+            android:transitionName="name"/>
+    </android.support.v7.widget.Toolbar>
+
+
+    <GridLayout
+        android:id="@+id/btns"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:alignmentMode="alignBounds"
+        android:columnCount="2">
+
+        <!--android:useDefaultMargins="true"-->
+        <!--android:rowOrderPreserved="false"-->
+
+        <Button
+            android:layout_columnWeight="1"
+            android:text="Fade" />
+
+        <Button
+            android:layout_columnWeight="1"
+            android:text="Explode" />
+
+        <Button
+            android:layout_columnWeight="1"
+            android:text="Fade(xml)" />
+
+        <Button
+            android:layout_columnWeight="1"
+            android:text="Explode(xml)" />
+
+    </GridLayout>
+
+
+    <com.android.volley.toolbox.NetworkImageView
+        android:id="@+id/profile_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/btns"
+        android:layout_below="@id/toolbar"
+        android:transitionName="profile_image" />
+
+
+</RelativeLayout>
